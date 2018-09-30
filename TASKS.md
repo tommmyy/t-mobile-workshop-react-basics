@@ -1,0 +1,1 @@
+1. transformuj vanilla JS kód v public/index.ejs do Reactu. Edituj soubor `src/index.js`
