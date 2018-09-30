@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Timer from "./Timer";
 
-class App extends Component {
-	render() {
-		return null;
-	}
-}
+const App = ({ timestamp }) => (
+	<Timer timestamp={timestamp} />
+);
 
 export default App;
