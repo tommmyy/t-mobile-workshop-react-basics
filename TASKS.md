@@ -29,3 +29,14 @@ Datum formátuj pomocí `toLocaleTimeString`.
 
 Výsledek:
 `git checkout timer-state-solution`
+
+8. Balónek
+Vytvořte aplikaci Baloon.
+
+- Založte si nový projekt - vyjděte z masteru této repository
+- Aplikace bude renderovat text - "Nafoukni mě" pokud bude balónek možné ještě nafouknout
+- Aplikace bude renderovat text - "Bang" pokud bude balónek prasknutý
+- Přidejte tlačítko "Fouk", foukne do balónku
+- Přidejte tlačítko "Reset", který vyfoukne balónek (pokud není prasklý)
+- Praknutý balonek znamená, že se na tlačítko "Fouk" fouklo vícekrát než "size".
+- Podle počtu nafouknutí můžete stylovat text balonku
