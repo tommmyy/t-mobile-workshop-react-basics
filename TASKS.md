@@ -25,6 +25,7 @@ Datum formátuj pomocí `toLocaleTimeString`.
 - Aktualizace bude způsobena změnou vnitřního stavu `App` (odstraníme setInterval z vně aplikace).
 - Funkce `setInterval`/ `clearInterval` budou použity ve vhodných metodách životního cyklu.
 - Bude možné definovat interval pro aktualizaci času pomocí `props` (využít i defaultProps).
+- Přidej `propTypes` a `defaultProps`, kde bude třeba
 
 Výsledek:
 `git checkout timer-state-solution`
