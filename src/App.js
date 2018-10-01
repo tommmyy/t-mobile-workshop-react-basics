@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import Timer from './Timer';
 
 class App extends Component {
 	render() {
-		return null;
+		const timestamp = Date.now();
+
+		return <Timer timestamp={timestamp} />;
 	}
 }
 

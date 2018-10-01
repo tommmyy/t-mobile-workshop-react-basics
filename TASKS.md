@@ -1,4 +1,4 @@
-1. Transformuj vanilla JS kód v public/index.ejs do Reactu. Edituj soubor `src/index.js`
+1. Transformuj vanilla JS kód v `public/index.html` do Reactu. Edituj soubor `src/index.js`
 2. Napiš komponentu `Timer`, která bude přijmat timestamp jako `prop` a bude renderovat JSX:
 
 ```html
