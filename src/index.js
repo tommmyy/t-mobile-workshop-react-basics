@@ -6,7 +6,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 const render = () => ReactDOM.render(
-	<App timestamp={new Date().getTime()} />,
+	<App />,
 	document.getElementById('root')
 );
 

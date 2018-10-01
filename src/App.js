@@ -1,8 +1,38 @@
-import React from 'react';
-import Timer from "./Timer";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-const App = ({ timestamp }) => (
-	<Timer timestamp={timestamp} />
-);
+import Timer from './Timer';
+
+const getTimestamp = () => new Date().getTime();
+
+class App extends Component {
+	static defaultProps = {
+		refreshInterval: 1000,
+	};
+
+	static propTypes = {
+		refreshInterval: PropTypes.number,
+	};
+
+	state = {};
+
+	componentDidMount() {
+		this.interval = setInterval(this.setTimestamp, this.props.refreshInterval);
+	}
+
+	componentWillUnmount() {
+		clearInterval(this.interval);
+	}
+
+	setTimestamp = () => {
+		this.setState({ timestamp: getTimestamp() });
+	};
+
+	render() {
+		const { timestamp } = this.state;
+
+		return timestamp ? <Timer timestamp={timestamp} /> : '';
+	}
+}
 
 export default App;
